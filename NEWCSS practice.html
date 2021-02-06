@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Learnig CSS</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans:wght@300&family=Source+Sans+Pro&family=Yusei+Magic&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+<ul class="topnav-left" id="dropDownClick">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#landing page">Landing Page</a></li>
+    <li><a href="contact info">Contact Info</a></li>
+    <li class="topnav-right"><a href="Sign In">Sign In</a></li>
+    <li class="topnav-right"><a href="Sign Up">Sign Up</a></li>
+    <li class= "dropdownIcon"><a href="javascript:void(0);" onclick="dropDownMenu()" >☰</a></li>
+</ul>
+</nav>
+<div class="container" id="section-1-gradient">
+<div class="row">
+    <div class="col-5">
+        <div class="leftside-col">
+            <h1 class="larger">Crazy Radness</h1>
+            <h1 class="larger"> Made for Developers</h1>
+        </div>
+        <div class="leftside-col">
+        <form>
+            <div>
+                <h2>Username</h2>
+                <input class="inputbox" type="text" placeholder="Username">
+                <h2>Password</h2>
+                <input class="inputbox" type=text placeholder="Password">
+            </div>
+        </form>   
+        </div>
+    </div>
+    <div class="col-5">
+        <div class="rightside-col">
+            <div class="videocontainer">
+         <iframe id="wide" height="315" src="https://www.youtube.com/embed/PoTNVhn1p1c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<header>
+<h1 class="section-2-header">The Standards of Awesomeness</h1>
+</header>
+<div class="container">
+<div class="row">
+    <div class="col-3">
+        <div class="box">
+            <div clas="icon">
+                <img src="https://via.placeholder.com/200x200">
+            </div>
+            <label>Chat with me</label>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+    </div>
+    </div>
+    <div class="col-3">
+        <div class="box">
+            <div clas="icon">
+                <img src="https://via.placeholder.com/200x200">
+            </div>
+            <label>Chat with me</label>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+    </div>
+    </div>
+    <div class="col-3">
+        <div class="box">
+            <div clas="icon">
+                <img src="https://via.placeholder.com/200x200">
+            </div>
+            <label>Chat with me</label>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
+    </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-10">
+        <button class="learnmore">Learn More</button>
+    </div>
+</div>
+<hr>
+<div class="container">
+    <div class="row bottombelle">
+    <div class="col-6">
+    <article>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </article>
+    </div>
+    <div class="col-4">
+        <div class="slopeIcon">
+            <img src="https://via.placeholder.com/1000x1000">
+        </div>
+    </div>
+    </div>
+</div>    
+<footer class="footsy">
+    <div class="row">
+        <div class="col-3">
+            <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+        </div>
+        <div class="col-3">
+            <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+        </div>
+        <div class="col-3">
+            <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Careers</li>
+                </ul>
+        </div>
+    </div>
+</footer>    
+<script>
+    function dropDownMenu() {
+        var x = document.getElementById("dropDownClick");
+        if (x.className==="topnav-left") {
+            x.className += " responsive";
+        /* change topnav to responsive*/
+        } else {
+            x.className =  "topnav-left";
+        }
+    }
+</script>    
+</body>
+</html>

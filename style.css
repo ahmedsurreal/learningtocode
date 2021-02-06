@@ -1,0 +1,236 @@
+/*defaults*******************/
+nav,
+header,
+footer {
+    display: block;
+    font-family: Nunito, cursive;
+}
+
+body {
+    line-height: 1;
+    margin: 0;
+    box-sizing: border-box;
+}
+label {
+    font-size: 32px;
+    font-weight: 600;
+}
+.container {
+    width: 100%;
+    margin:auto;
+    padding-top:1%;
+    padding-bottom:4%;
+}
+.row {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+p {
+    line-height: 1.2;
+    font-size: 18px;
+}
+article {
+    font-size:32px;
+    padding:10px;
+}
+
+.col-1 {width: 10%}
+.col-2 {width: 20%}
+.col-3 {width: 33%}
+.col-4 {width: 40%}
+.col-5 {width: 50%}
+.col-6 {width: 60%}
+.col-7 {width: 70%}
+.col-8 {width: 80%}
+.col-9 {width: 90%}
+.col-10 {width: 100%}
+
+h1.larger {
+    color: white;
+    font-size: 36px;
+}
+h1.section-2-header{
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+}
+
+input[type="text"]{
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding: 5px 7px;
+    border-radius: 8px;
+}
+form h2 {
+    color: white;
+}
+.leftside-col {
+    padding-left: 5%;
+}
+.rightside-col {
+    padding: 5%;
+}
+footer.footsy {
+    background-color: #666;
+    padding-left:10%;
+}
+footer.footsy h1 {
+    font-size: 20px;
+}
+footer.footsy ul {
+    padding-left: 0px;
+    list-style: none;
+    text-align: left;
+}
+footer.footsy ul li {
+    color: white;
+    font-size: 22px;
+    line-height: 1.5;
+}
+/***GradientStyle*********/
+
+#section-1-gradient {
+    background: red;
+    background-image: linear-gradient(#076dff, #65a5ff);
+}
+
+button {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    background-color: blue;
+    padding: 15px 60px;
+    display: block;
+    border-radius: 10px;
+}
+button.learnmore {
+    display: block;
+    margin: auto;
+}
+div.box {
+    background-color: mintcream;
+    box-shadow: 0 0 1px 1px rgba(0,0,0,.02), 0 0 3px 0 rgba(0,0,0,.1);
+    text-align: center;
+    margin: 10px 4%;
+    padding: 36px 24px;
+    border-radius: 7px;
+}
+div.icon {
+    width: 100%;
+}
+
+
+div.slopeIcon img {
+    display:block;
+    width:90%;
+    margin:auto;
+    box-shadow: -2px -2px 5px 2px rgba(0, 0, 0, .42), 2px 2px 5px 2px rgba(0,0,0,.5); 
+}
+ #wide {
+        width: 100%;
+        margin: auto;
+    }
+
+/*nav bar******************/
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: blanchedalmond;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav-left li {
+    list-style: none;
+    float:left;
+}
+
+ul.topnav-left li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    border-right: 1px none blue;
+    border-radius: 10px;
+    margin: 0 1px;
+}
+
+ul.topnav-left li a:hover {
+    color: white;
+    background-color: blue;
+}
+
+ul.topnav-left li.topnav-right {
+    float: right;
+}
+ul.topnav-left li.dropdownIcon {
+    display: none;
+}
+/***mobile*********************/
+@media screen and (max-width: 680px) {
+    ul.topnav-left li:not(:nth-child(1)){
+        display: none;
+    }
+    ul.topnav-left li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+    .col-5, .col-3, .col-4, .col-6{
+    width:100%;
+    margin: 0;
+    }
+    div.box {
+        padding:5px;
+        display:block;
+    }
+    div.slopeIcon {
+        margin: 10px;
+    }
+    
+    .leftside-col, .rightside-col {
+    margin: 15px;
+    }
+    .
+    .div.videocontainer {
+        margin: auto;
+    }
+    .videocontainer iframe{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+}
+ul.topnav-left.responsive li.dropdownIcon {
+    position:absolute;
+    top:0;
+    right:0;
+}
+ul.topnav-left.responsive {
+    position:relative;
+}
+
+ul.topnav-left.responsive li {
+    display: inline;
+    float:none;
+}
+ul.topnav-left.responsive li a {
+    display: block;
+    text-align: left;
+}
